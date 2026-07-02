@@ -1,7 +1,8 @@
 import PropTypes from "prop-types";
 import FriendContext from "../context/FriendContext.tsx";
+import {useContext} from "react";
 
-function FriendList(props) {
+function FriendList() {
 
     const {friends} = useContext(FriendContext);
 

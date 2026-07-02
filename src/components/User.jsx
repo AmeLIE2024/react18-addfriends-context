@@ -1,9 +1,10 @@
 import PropTypes from "prop-types";
 import FriendContext from "../context/FriendContext.tsx";
+import {useContext} from "react";
 
 function User(props) {
     const {username, name, email} = props;
-  
+
     const {friends, setFriends} = useContext(FriendContext);
 
     function addFriend() {

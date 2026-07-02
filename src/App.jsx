@@ -22,10 +22,8 @@ function App() {
                 <FriendList
                     friends={friends}
                 />
-
-
-            <h2>Users :</h2>
-            {users.map((user) => (
+                <h2>Users :</h2>
+                {users.map((user) => (
 
                     <User
                         key={user.id}
@@ -35,7 +33,7 @@ function App() {
                     />
 
 
-            ))}
+                ))}
             </FriendContext.Provider>
         </div>
     );
